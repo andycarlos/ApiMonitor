@@ -2,6 +2,8 @@
 ApiMonitor is a package that allows us to monitor the usage of our APIs Applications. Below is a description of each of the functionalities that it has available.
 <!--TOC-->
   - [How to use it after installing the package](#How-to-use-it-after-installing-the-package)
+    - [AutomaticMonitor](#AutomaticMonitor)
+    - [AutomaticLogError](#AutomaticLogError)
   - [Getting Started with Client](#getting-started-with-client)
     - [Web Api Setting](#web-api-setting)
     - [Console App Setting](#console-app-setting)
@@ -36,6 +38,7 @@ In the Middleware **UseMonitorUI** you can use several overloads, to use **autom
 
 ```C#
 app.UseMonitorUI(); //Default
+// or
 app.UseMonitorUI(automaticMonitor : false, automaticLogError: true); // Default
 ```
 ## AutomaticMonitor
